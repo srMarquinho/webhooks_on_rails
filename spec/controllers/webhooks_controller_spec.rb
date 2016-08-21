@@ -2,11 +2,12 @@ require 'rails_helper'
 
 RSpec.describe WebhooksController, type: :controller do
   describe 'routes' do
-    it 'routes get webhooks#index' do
+    
+    it 'get webhooks#index' do
       expect(get: '/webhooks').to route_to(controller: 'webhooks', action: 'index')
     end
 
-    it 'routes post webhooks#create' do
+    it 'post webhooks#create' do
       expect(post: '/webhooks').to route_to(controller: 'webhooks', action: 'create')
     end
 

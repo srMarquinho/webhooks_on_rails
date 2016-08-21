@@ -24,3 +24,7 @@ Things you may want to cover:
 * ...
 
 `go run doc/llirdnam-master/llirdnam/llirdnam.go http://localhost:3000`
+
+spent time on:
+setup and receive webhooks
+unit test controller request
