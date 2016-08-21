@@ -1,15 +1,6 @@
-require 'rails_helper'
-
-# Specs in this file have access to a helper object that includes
-# the WebhooksHelper. For example:
-#
-# describe WebhooksHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
+# def json_params
+#   params: { 'Address': 'marco@lostmy.name',
+#             'EmailType': 'Shipment',
+#             'Event': 'send',
+#             'Timestamp': 1_432_820_696 }.to_json
 # end
-RSpec.describe WebhooksHelper, type: :helper do
-
-end
