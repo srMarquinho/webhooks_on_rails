@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+`go run doc/llirdnam-master/llirdnam/llirdnam.go http://localhost:3000`
