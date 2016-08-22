@@ -1,30 +1,46 @@
-# README
+# Webhook on Rails
+This little Ruby on Rails app is able to store webhooks into its database and show you the statistics.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Why Rails? It is easy to expand features and fast to build.
 
-Things you may want to cover:
+I considered separating concerns and avoiding dependencies. That way new email types and events can be added/removed with easy.
 
-* Ruby version
+Clean code.
 
-* System dependencies
+## How to use:
+Using terminal:
+- Clone this repository
+- Navigate to the repo directory `cd webwebhooks_on_rails`
+- Install dependencies `bundle install`
+- Run the server `rails s`
+- Run the webhook simulator `go run doc/llirdnam-master/llirdnam/llirdnam.go http://localhost:3000`
+- Visit <http://localhost:3000/>
+- Refresh the page to see real-time updates.
 
-* Configuration
+#### See Tests:
+- Run `rspec`
 
-* Database creation
+#### User stories:
 
-* Database initialization
+```
+As an administrator
+So I know users behaviour
+I want to see the number of emails sent, opened and clicked
+```
+```
+As an administrator
+So I know what kind of behaviour
+I want to see the rating by email type
+```
 
-* How to run the test suite
+#### Where to:
+Implement live updates to the browser, possibly with jQuery.
+Improve user experience adding views options.
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Challenges:
+This exercise was quite challenging in a few aspects.
 
-* Deployment instructions
+Setting up llirdnam webhook environment and requesting it to the server took me quite some time and research. Testing the controller request was also a bit tricky.
 
-* ...
-
-`go run doc/llirdnam-master/llirdnam/llirdnam.go http://localhost:3000`
-
-spent time on:
-setup and receive webhooks
-unit test controller request
+![alt text](doc/screen.png)
+![alt text](doc/test.png)
