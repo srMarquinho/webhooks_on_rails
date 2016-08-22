@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/srMarquinho/webhooks_on_rails.svg?branch=master)](https://travis-ci.org/srMarquinho/webhooks_on_rails)
+[![Coverage Status](https://coveralls.io/repos/github/srMarquinho/webhooks_on_rails/badge.svg?branch=master)](https://coveralls.io/github/srMarquinho/webhooks_on_rails?branch=master)
+
 # Web hook on Rails
 This little Ruby on Rails app is able to store web hooks into its database and show you the statistics.
 
@@ -9,7 +12,7 @@ Clean code.
 
 ## How to use:
 Using terminal:
-- Clone this repository
+- Clone this repository `git clone https://github.com/srMarquinho/webhooks_on_rails`
 - Navigate to the repo directory `cd webwebhooks_on_rails`
 - Install dependencies `bundle install`
 - Run the server `rails s`

@@ -37,6 +37,7 @@ group :development, :test do
   gem 'capybara'
   gem 'simplecov'
   gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
+  gem 'coveralls', require: false
 end
 
 group :development do
