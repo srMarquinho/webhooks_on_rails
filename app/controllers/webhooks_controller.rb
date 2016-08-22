@@ -6,7 +6,6 @@ class WebhooksController < ApplicationController
     @number_of_emails_opened = @webhook.number_of_events('open')
     @number_of_clicks = @webhook.number_of_events('click')
     @email_types = @webhook.email_types
-    # p rate_between("Shipment", 'click')
   end
 
   def create
