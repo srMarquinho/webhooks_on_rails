@@ -1,11 +1,12 @@
 require 'rails_helper'
 
-  feature 'FEATURE: "/"' do
-    before(:each) do
-      webhook_create
-      visit '/'
-    end
+feature 'FEATURE: "/"' do
+  before(:each) do
+    webhook_create
+    visit '/'
+  end
 
+  feature 'shows total' do
     scenario 'shows number of emails sent' do
       expect(page).to have_content 'Number of emails sent: 2'
     end
@@ -17,7 +18,9 @@ require 'rails_helper'
     scenario 'shows open rate for each email type' do
       expect(page).to have_content 'Number of clicks: 1'
     end
+  end
 
+  feature 'shows individual' do
     scenario 'shows "Order" open and click rate' do
       expect(page).to have_content 'Order OPEN rate: 0.02% CLICK rate: 0.01%'
     end
@@ -38,3 +41,4 @@ require 'rails_helper'
       expect(page).to have_content 'Refer a friend OPEN rate: 0.02% CLICK rate: 0.01%'
     end
   end
+end
