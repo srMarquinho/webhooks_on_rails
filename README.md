@@ -4,7 +4,7 @@
 # Web hook on Rails
 This little Ruby on Rails app is able to store web hooks into its database and show you the statistics.
 
-Why Rails? It is easy to expand features and fast to build.
+Why Rails? It is easy to expand features and fast to build. It's database is postgresql for easy Heroku implementation.
 
 I considered separating concerns and avoiding dependencies. That way new email types and events can be added/removed with easy.
 
@@ -15,10 +15,11 @@ Using terminal:
 - Clone this repository `git clone https://github.com/srMarquinho/webhooks_on_rails`
 - Navigate to the repo directory `cd webwebhooks_on_rails`
 - Install dependencies `bundle install`
+- Run `rake db:create` and `rake db:migrate`
 - Run the server `rails s`
 - Run the webhook simulator `go run doc/llirdnam-master/llirdnam/llirdnam.go http://localhost:3000`
 - Visit <http://localhost:3000/>
-- Refresh the page to see real-time updates.
+- Refresh the page to see real-time magic updating the view.
 
 #### See Tests:
 - Run `rspec`
