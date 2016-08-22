@@ -15,7 +15,7 @@ Using terminal:
 - Clone this repository `git clone https://github.com/srMarquinho/webhooks_on_rails`
 - Navigate to the repo directory `cd webwebhooks_on_rails`
 - Install dependencies `bundle install`
-- Run `rake db:create` and `rake db:migrate`
+- Run the database setup `rake db:create` and `rake db:migrate`
 - Run the server `rails s`
 - Run the webhook simulator `go run doc/llirdnam-master/llirdnam/llirdnam.go http://localhost:3000`
 - Visit <http://localhost:3000/>
