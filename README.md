@@ -1,5 +1,5 @@
-# Webhook on Rails
-This little Ruby on Rails app is able to store webhooks into its database and show you the statistics.
+# Web hook on Rails
+This little Ruby on Rails app is able to store web hooks into its database and show you the statistics.
 
 Why Rails? It is easy to expand features and fast to build.
 
@@ -40,7 +40,7 @@ Improve user experience adding views options.
 #### Challenges:
 This exercise was quite challenging in a few aspects.
 
-Setting up llirdnam webhook environment and requesting it to the server took me quite some time and research. Testing the controller request was also a bit tricky.
+Setting up llirdnam web hook environment and requesting it to the server took me quite some time and research. Testing the controller request was also a bit tricky.
 
 ![alt text](doc/screen.png)
 ![alt text](doc/test.png)
